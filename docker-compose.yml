@@ -12,7 +12,7 @@ services:
   stratum-mining:
     restart: always
     build: stratum-mining
-    image: mecab/stratum-mining
+    image: mecab/stratum-mining:ytn
     env_file: .env.production
     ports:
       - "16011:16011"
@@ -25,7 +25,7 @@ services:
   stratum-mining-low-difficulty:
     restart: always
     build: stratum-mining
-    image: mecab/stratum-mining
+    image: mecab/stratum-mining:ytn
     env_file: .env.production
     ports:
       - "16012:16012"

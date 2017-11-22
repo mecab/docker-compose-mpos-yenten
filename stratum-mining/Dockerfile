@@ -18,7 +18,7 @@ RUN cd stratum-mining && \
 
 RUN cd stratum-mining && \
     curl https://gist.githubusercontent.com/mecab/bb3e1f1eaef9b7d06b1ec7cfa5f87f0d/raw/03c0f87b0faa84c0dc290443085953ac30a07ef2/stratum.patch | \
-         tail -n +4 | \
+         tail -n +4 \
          > stratum.patch && \
     patch -p1 < stratum.patch
 
@@ -26,7 +26,7 @@ RUN cd stratum && \
     sed -i -e "s/use_setuptools()//" setup.py && \
     python setup.py install
 
-RUN cd zny_yescrypt_python && python setup.py install
+RUN cd ytn_yescrypt_python && python setup.py install
 
 RUN cd stratum-mining && \
     sed -i -e 's/config = None/raise/' lib/settings.py && \
