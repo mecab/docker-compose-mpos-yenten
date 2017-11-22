@@ -10,16 +10,15 @@ RUN pip install simplejson pylibmc MySQL-python pycrypto
 
 RUN git clone https://github.com/ahmedbodi/stratum-mining.git && \
     git clone https://github.com/ahmedbodi/stratum.git && \
-    git clone https://github.com/bitzeny/zny_yescrypt_python.git
+    git clone https://github.com/mecab/ytn_yescrypt_python.git
 
 RUN cd stratum-mining && \
     git submodule init && \
     git submodule update
 
 RUN cd stratum-mining && \
-    curl https://gist.githubusercontent.com/bitzeny/9db1723161bc2650a1b1/raw/82197337372d4cd2079cd21c948bc6151fa1ca62/stratum.patch | \
+    curl https://gist.githubusercontent.com/mecab/bb3e1f1eaef9b7d06b1ec7cfa5f87f0d/raw/03c0f87b0faa84c0dc290443085953ac30a07ef2/stratum.patch | \
          tail -n +4 | \
-         sed -e "s/zny_yesscrypt/zny_yescrypt/" \
          > stratum.patch && \
     patch -p1 < stratum.patch
 

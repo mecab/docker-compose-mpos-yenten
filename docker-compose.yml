@@ -15,7 +15,7 @@ services:
     image: mecab/stratum-mining
     env_file: .env.production
     ports:
-      - "16001:16001"
+      - "16011:16011"
     depends_on:
       - db
     volumes:
@@ -28,7 +28,7 @@ services:
     image: mecab/stratum-mining
     env_file: .env.production
     ports:
-      - "16002:16002"
+      - "16012:16012"
     depends_on:
       - db
     volumes:
@@ -47,4 +47,4 @@ services:
       - stratum-mining
       - db
     ports:
-      - "16000:80"
+      - "16010:80"

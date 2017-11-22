@@ -24,7 +24,7 @@ COINDAEMON_TRUSTED_PASSWORD = os.getenv('STRATUM_COINDAEMON_TRUSTED_PASSWORD')
 # scrypt, sha256d, scrypt-jane, skeinhash, quark and riecoin
 # If the option does not meet either of these criteria stratum defaults to scrypt
 # For Coins which support TX Messages please enter yes in the TX selection
-COINDAEMON_ALGO = 'zny_yescrypt'
+COINDAEMON_ALGO = 'ytn_yescrypt'
 COINDAEMON_TX = 'no'
 
 # ******************** BASIC SETTINGS ***************

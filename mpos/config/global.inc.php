@@ -90,8 +90,8 @@ $config['swiftmailer']['smtp']['throttle'] = 100;
  *  Shown to users in the 'Getting Started' section
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-getting-started
  **/
-$config['gettingstarted']['coinname'] = 'Bitzeny';
-$config['gettingstarted']['coinurl'] = 'http://bitzeny.org';
+$config['gettingstarted']['coinname'] = 'Yenten';
+$config['gettingstarted']['coinurl'] = 'https://conan-equal-newone.github.io/yenten/';
 $config['gettingstarted']['stratumurl'] = getenv('STRATUM_HOSTNAME');
 $config['gettingstarted']['stratumport'] = getenv('STRATUM_SOCKET_PORT');
 
@@ -139,7 +139,7 @@ $config['accounts']['invitations']['count'] = 5;
  *  Shorthand name for the currency
  *   https://github.com/MPOS/php-mpos/wiki/Config-Setup#wiki-currency
  */
-$config['currency'] = 'ZNY';
+$config['currency'] = 'YTN';
 
 /**
  * Coin Target
